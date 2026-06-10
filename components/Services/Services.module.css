@@ -1,0 +1,117 @@
+.servicesSection {
+  padding: 4rem 0;
+  background-color: var(--bg-light);
+}
+
+.sectionHeading {
+  font-size: 2rem;
+  line-height: 1.2;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  margin-bottom: 1.5rem;
+  color: var(--primary-navy);
+}
+
+.sectionSub {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--text-muted);
+  max-width: 750px;
+}
+
+/* Service Card */
+.serviceCard {
+  background: var(--bg-white);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+  padding: 3rem 2.25rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  /* box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02); */
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+}
+
+.serviceCard:hover {
+  border-color: rgba(242, 124, 27, 0.2);
+}
+
+/* Icon Box */
+.iconContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 54px;
+  height: 54px;
+  background-color: var(--primary-navy);
+  color: var(--text-light);
+  font-size: 1.5rem;
+  border-radius: 4px;
+  margin-bottom: 2.5rem;
+  transition: all 0.3s ease;
+}
+
+.serviceCard:hover .iconContainer {
+  background-color: var(--accent-orange);
+  transform: rotate(5deg) scale(1.05);
+  box-shadow: 0 5px 15px rgba(242, 124, 27, 0.3);
+}
+
+.cardTitle {
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--primary-navy);
+  margin-bottom: 1rem;
+  line-height: 1.3;
+}
+
+.cardDesc {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--text-muted);
+  margin: 0;
+  flex-grow: 1;
+  /* Pushes the orange bar to the bottom */
+}
+
+/* Bottom Orange Bar */
+.orangeBar {
+  width: 32px;
+  height: 3px;
+  background-color: var(--accent-orange);
+  margin-top: 2rem;
+  border-radius: 2px;
+  transition: width 0.3s ease;
+}
+
+.serviceCard:hover .orangeBar {
+  width: 60px;
+}
+
+/* Responsiveness */
+@media (max-width: 991.98px) {
+  .servicesSection {
+    padding: 3rem 0;
+  }
+
+  .sectionHeading {
+    font-size: 2rem;
+  }
+
+  .serviceCard {
+    padding: 2.5rem 1.75rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .sectionHeading {
+    font-size: 1.75rem;
+  }
+
+  .serviceCard {
+    padding: 2.25rem 1.5rem;
+  }
+}

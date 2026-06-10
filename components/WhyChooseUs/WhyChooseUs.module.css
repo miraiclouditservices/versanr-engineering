@@ -1,0 +1,108 @@
+.whySection {
+  position: relative;
+  padding: 4rem 0;
+  background-color: var(--navy-dark);
+  color: var(--text-light);
+  overflow: hidden;
+}
+
+.sectionHeading {
+  font-size: 2rem;
+  line-height: 1.2;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  margin-bottom: 1.5rem;
+  color: var(--text-light);
+}
+
+.sectionSub {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.7);
+  max-width: 450px;
+}
+
+/* Reasons Grid Layout */
+.reasonsGrid {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.01);
+  backdrop-filter: blur(10px);
+  overflow: hidden;
+}
+
+.gridItem {
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.gridItem:hover {
+  background-color: rgba(255, 255, 255, 0.03);
+}
+
+.contentWrapper {
+  padding: 3rem 2.5rem;
+}
+
+.iconBox {
+  font-size: 1.8rem;
+  color: var(--accent-orange);
+  margin-bottom: 1.25rem;
+  display: inline-flex;
+  transition: transform 0.3s ease;
+}
+
+.gridItem:hover .iconBox {
+  transform: scale(1.15) translateY(-2px);
+}
+
+.reasonTitle {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-light);
+  margin-bottom: 0.75rem;
+}
+
+.reasonDesc {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.6);
+  margin: 0;
+}
+
+/* Responsive border grid lines */
+@media (min-width: 576px) {
+
+  /* Vertical divider */
+  .gridItem:nth-child(odd) {
+    border-right: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  /* Horizontal dividers */
+  .gridItem:nth-child(-n+4) {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  }
+}
+
+@media (max-width: 575.98px) {
+
+  /* On single column layout, every item except the last has a bottom border */
+  .gridItem:not(:last-child) {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .contentWrapper {
+    padding: 2.25rem 1.75rem;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .whySection {
+    padding: 5rem 0;
+  }
+
+  .sectionHeading {
+    font-size: 2rem;
+  }
+}

@@ -1,0 +1,185 @@
+.aboutSection {
+  padding: 4rem 0;
+  background-color: var(--bg-white);
+  overflow: hidden;
+}
+
+.sectionHeading {
+  font-size: 2rem;
+  line-height: 1.2;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  margin-bottom: 2rem;
+  color: var(--primary-navy);
+}
+
+.paragraphPrimary {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text-dark);
+  margin-bottom: 1.25rem;
+}
+
+.paragraphSecondary {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text-muted);
+  margin-bottom: 2rem;
+}
+
+/* Pillar Cards */
+.pillarCard {
+  border-left: 2px solid var(--accent-orange);
+  padding-left: 1.25rem;
+  height: 100%;
+}
+
+.pillarTitle {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: var(--primary-navy);
+}
+
+.pillarDesc {
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+/* Image Column Layout */
+.imageContainer {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+}
+
+.aboutImage {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+  border-radius: 4px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 2;
+}
+
+/* Decorative offset border */
+.orangeOutlineBorder {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 150px;
+  height: 150px;
+  border-left: 4px solid var(--accent-orange);
+  border-bottom: 4px solid var(--accent-orange);
+  z-index: 1;
+}
+
+/* Floating dark badge */
+.floatingBadge {
+  position: absolute;
+  bottom: 2rem;
+  right: 0rem;
+  width: 220px;
+  background-color: var(--primary-navy);
+  padding: 1rem;
+  border-radius: 4px;
+  /* box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25); */
+  z-index: 3;
+  color: var(--text-light);
+  border-left: 3px solid var(--accent-orange);
+}
+
+.badgeTitle {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: var(--text-light);
+}
+
+.badgeDesc {
+  font-size: 0.85rem;
+  line-height: 1.4;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0;
+}
+
+/* Responsiveness */
+@media (max-width: 991.98px) {
+  .aboutSection {
+    padding: 2rem 0;
+  }
+
+  .sectionHeading {
+    font-size: 1.5rem;
+  }
+
+  .imageContainer {
+    max-width: 480px;
+    margin-top: 2rem;
+    padding-left: 20px;
+    padding-bottom: 20px;
+  }
+
+  .aboutImage {
+    height: 300px;
+  }
+
+  .orangeOutlineBorder {
+    left: 0;
+    width: 120px;
+    height: 120px;
+  }
+
+  .floatingBadge {
+    right: -0.5rem;
+    bottom: 1rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .sectionHeading {
+    font-size: 1rem;
+  }
+
+  .pillarCard {
+    padding-left: 1rem;
+  }
+
+  .imageContainer {
+    padding-left: 15px;
+    padding-bottom: 15px;
+  }
+
+  .aboutImage {
+    height: 220px;
+  }
+
+  .orangeOutlineBorder {
+    width: 100px;
+    height: 100px;
+    border-left-width: 3px;
+    border-bottom-width: 3px;
+  }
+
+  .floatingBadge {
+    width: 180px;
+    padding: 0.75rem;
+    right: 0;
+    bottom: 0.5rem;
+  }
+
+  .badgeTitle {
+    font-size: 1.1rem;
+  }
+
+  .badgeDesc {
+    font-size: 0.8rem;
+  }
+}

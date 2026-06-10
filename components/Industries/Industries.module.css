@@ -1,0 +1,139 @@
+.industriesSection {
+  padding: 4rem 0;
+
+  background-color: var(--bg-white);
+  overflow: hidden;
+}
+
+.sectionHeading {
+  font-size: 2rem;
+  line-height: 1.2;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  color: var(--primary-navy);
+  margin: 0;
+}
+
+.sectionSub {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: var(--text-muted);
+  max-width: 500px;
+  margin: 0;
+}
+
+/* 5-Column Grid Layout */
+.industriesWrapper {
+  border-top: 1px solid #e2e8f0;
+  border-bottom: 1px solid #e2e8f0;
+  margin-top: 3.5rem;
+}
+
+.industryCol {
+  border-right: 1px solid #e2e8f0;
+  padding: 4rem 2rem;
+  transition: all 0.3s ease;
+  min-width: 0;
+  /* Prevents overflow in flex layouts */
+}
+
+.industryCol:last-child {
+  border-right: none;
+}
+
+.industryCol:hover {
+  background-color: rgba(242, 124, 27, 0.02);
+}
+
+.contentCard {
+  text-align: left;
+}
+
+.industryNum {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--accent-orange);
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.5px;
+  transition: transform 0.3s ease;
+}
+
+.industryCol:hover .industryNum {
+  transform: translateY(-3px);
+}
+
+.industryName {
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--primary-navy);
+  margin: 0;
+  line-height: 1.2;
+}
+
+/* Responsiveness */
+@media (max-width: 991.98px) {
+  .industriesSection {
+    padding: 0;
+  }
+
+  .sectionHeading {
+    font-size: 2rem;
+  }
+
+  .industriesWrapper {
+    border-bottom: none;
+  }
+
+  /* Wrap cols in a 3-col + 2-col layout on tablets */
+  .industriesWrapper :global(.row) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .industryCol {
+    flex: 0 0 33.3333%;
+    max-width: 33.3333%;
+    border-bottom: 1px solid #e2e8f0;
+    padding: 3rem 1.5rem;
+  }
+
+  /* Reset vertical borders */
+  .industryCol:nth-child(3n) {
+    border-right: none;
+  }
+
+  .industryCol:nth-child(4),
+  .industryCol:nth-child(5) {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  .industryCol:nth-child(4) {
+    border-right: 1px solid #e2e8f0;
+  }
+
+  .industryCol:nth-child(5) {
+    border-right: none;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .industryCol {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    border-right: none !important;
+    border-bottom: 1px solid #e2e8f0;
+    padding: 2.25rem 1.25rem;
+  }
+
+  .industryCol:last-child {
+    border-bottom: none;
+  }
+
+  .industriesWrapper {
+    border-bottom: 1px solid #e2e8f0;
+  }
+}
