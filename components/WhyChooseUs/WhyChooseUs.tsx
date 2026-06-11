@@ -5,40 +5,34 @@ import styles from "./WhyChooseUs.module.css";
 
 const reasonsData = [
   {
-    id: "quality",
-    title: "Quality Assured",
-    desc: "Processes and workmanship guided by uncompromising quality standards.",
+    id: "customer-design",
+    title: "Customer-Centric Design",
+    desc: "Solutions engineered to resolve specific operational problems and optimize productivity.",
+    iconClass: "bi-person-gear",
+  },
+  {
+    id: "end-to-end",
+    title: "End-to-End Service",
+    desc: "From initial site assessment and design to fabrication, supply, and technical support.",
+    iconClass: "bi-gear-wide-connected",
+  },
+  {
+    id: "quality-mfg",
+    title: "Quality Manufacturing",
+    desc: "Robust fabrication standards, material selection, and finishing that ensure durability.",
     iconClass: "bi-shield-check",
   },
   {
-    id: "team",
-    title: "Experienced Team",
-    desc: "Hands-on professionals with deep industrial and engineering experience.",
-    iconClass: "bi-people",
-  },
-  {
-    id: "delivery",
-    title: "Timely Delivery",
-    desc: "Careful planning and execution that keeps projects moving on schedule.",
-    iconClass: "bi-clock",
-  },
-  {
-    id: "pricing",
-    title: "Competitive Pricing",
-    desc: "Value-focused solutions without compromising on performance or quality.",
-    iconClass: "bi-currency-rupee",
-  },
-  {
-    id: "satisfaction",
-    title: "Customer Satisfaction",
-    desc: "Responsive collaboration and dependable support at every stage.",
-    iconClass: "bi-hand-thumbs-up",
+    id: "flexibility",
+    title: "Flexibility",
+    desc: "Capacity to manufacture one-off bespoke equipment as well as larger production runs.",
+    iconClass: "bi-shuffle",
   },
   {
     id: "expertise",
-    title: "Technical Expertise",
-    desc: "Sound engineering judgement applied to real-world industrial challenges.",
-    iconClass: "bi-diagram-3",
+    title: "Expertise",
+    desc: "Experienced engineering and fabrication teams familiar with heavy-duty, abrasive environments.",
+    iconClass: "bi-award",
   },
 ];
 
@@ -54,11 +48,10 @@ export default function WhyChooseUs() {
           <div className="col-lg-5 text-start">
             <div className="section-badge">Why Choose Us</div>
             <h2 className={styles.sectionHeading}>
-              A dependable engineering partner for every challenge.
+              Why Choose Versan Engineering
             </h2>
             <p className={styles.sectionSub}>
-              Our approach is defined by technical clarity, accountable execution, and a commitment 
-              to delivering lasting value to every client.
+              We engineer custom solutions to resolve specific operational challenges, optimizing your productivity and equipment lifespan in heavy-duty environments.
             </p>
           </div>
 

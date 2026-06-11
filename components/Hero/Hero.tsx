@@ -24,19 +24,19 @@ export default function Hero() {
 
             {/* Main Heading */}
             <h1 className={styles.mainHeading}>
-              Precision Engineering for a <br />
-              <span className={styles.textAccent}>Stronger Tomorrow</span>
+              Stone Crushing Equipment & <br />
+              <span className={styles.textAccent}>Custom Engineering</span>
             </h1>
 
             {/* Subtext */}
             <p className={styles.subtext}>
-              Engineering excellence. Reliable solutions. Lasting value for industrial projects 
-              that demand strength, accuracy, and accountability.
+              Leading manufacturer of stone crushing equipment, custom-engineered solutions,
+              and heavy MS fabrication for the mining, quarrying, and bulk-material handling industries.
             </p>
 
             {/* CTA Buttons */}
             <div className="d-flex align-items-center gap-3 mb-5 flex-wrap">
-              <a href="tel:+917942534385" className={styles.btnOrange} aria-label="Call Us Now">
+              <a href="tel:+919059057480" className={styles.btnOrange} aria-label="Call Us Now">
                 <i className="bi bi-telephone"></i>
               </a>
               <a href="#about" className={styles.btnOutline} aria-label="Learn More About Us">
@@ -52,7 +52,7 @@ export default function Hero() {
               </div>
               <div className="d-flex align-items-center gap-2">
                 <i className="bi bi-telephone-fill text-warning"></i>
-                <span className={styles.infoText}>+91 7942534385</span>
+                <span className={styles.infoText}>+91 90590 57480</span>
               </div>
             </div>
           </div>

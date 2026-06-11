@@ -115,3 +115,36 @@
     padding: 2.25rem 1.5rem;
   }
 }
+
+/* Tabs Switcher styling */
+.tabsContainer {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.tabButton {
+  padding: 0.75rem 1.75rem;
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 700;
+  border-radius: 4px;
+  background-color: transparent;
+  color: var(--primary-navy);
+  border: 1px solid rgba(11, 26, 46, 0.15);
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.tabButtonActive {
+  background-color: var(--primary-navy);
+  color: var(--text-light);
+  border-color: var(--primary-navy);
+}
+
+.tabButton:hover:not(.tabButtonActive) {
+  border-color: var(--accent-orange);
+  color: var(--accent-orange);
+}

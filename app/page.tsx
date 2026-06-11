@@ -4,6 +4,7 @@ import Hero from "@/components/Hero/Hero";
 import About from "@/components/About/About";
 import Services from "@/components/Services/Services";
 import WhyChooseUs from "@/components/WhyChooseUs/WhyChooseUs";
+import HowWeWork from "@/components/HowWeWork/HowWeWork";
 import Industries from "@/components/Industries/Industries";
 import Gallery from "@/components/Gallery/Gallery";
 import Contact from "@/components/Contact/Contact";
@@ -27,6 +28,9 @@ export default function Home() {
 
         {/* Why Choose Us Dark Grid Section */}
         <WhyChooseUs />
+
+        {/* How We Work Process Section */}
+        <HowWeWork />
 
         {/* Industries We Serve Section */}
         <Industries />

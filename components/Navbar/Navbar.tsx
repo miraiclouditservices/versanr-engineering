@@ -40,7 +40,7 @@ export default function Navbar() {
 
         {/* Mobile Action buttons (Visible on Mobile) */}
         <div className="d-flex align-items-center gap-2 d-lg-none">
-          <a className={styles.phoneButtonMobile} href="tel:+917942534385" aria-label="Call Versan Engineering">
+          <a className={styles.phoneButtonMobile} href="tel:+919059057480" aria-label="Call Versan Engineering">
             <i className="bi bi-telephone-fill"></i>
           </a>
           <button 
@@ -72,9 +72,9 @@ export default function Navbar() {
               <a className={styles.navLink} href="#contact">Contact</a>
             </li>
             <li className="nav-item ms-3">
-              <a className={styles.phoneButton} href="tel:+917942534385">
+              <a className={styles.phoneButton} href="tel:+919059057480">
                 <i className="bi bi-telephone me-2"></i>
-                +91 7942534385
+                +91 90590 57480
               </a>
             </li>
           </ul>
@@ -100,9 +100,9 @@ export default function Navbar() {
             <a className={styles.mobileNavLink} href="#contact" onClick={closeMenu}>Contact</a>
           </li>
           <li className="mt-3 w-100">
-            <a className={styles.mobilePhoneButton} href="tel:+917942534385">
+            <a className={styles.mobilePhoneButton} href="tel:+919059057480">
               <i className="bi bi-telephone me-2"></i>
-              +91 7942534385
+              +91 90590 57480
             </a>
           </li>
         </ul>

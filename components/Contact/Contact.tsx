@@ -62,22 +62,44 @@ export default function Contact() {
                 </div>
                 <div className="ms-3">
                   <h4 className={styles.cardTitle}>Call Us Directly</h4>
-                  <a href="tel:+917942534385" className={styles.cardLink}>+91 7942534385</a>
+                  <a href="tel:+919059057480" className={styles.cardLink}>+91 90590 57480</a>
                 </div>
               </div>
 
-              {/* Card 3: Email */}
+              {/* Card 3: WhatsApp */}
+              <div className={styles.infoCard}>
+                <div className={styles.iconContainer}>
+                  <i className="bi bi-whatsapp"></i>
+                </div>
+                <div className="ms-3">
+                  <h4 className={styles.cardTitle}>WhatsApp Business</h4>
+                  <a href="https://wa.me/919059057480" target="_blank" rel="noopener noreferrer" className={styles.cardLink}>+91 90590 57480</a>
+                </div>
+              </div>
+
+              {/* Card 4: Email */}
               <div className={styles.infoCard}>
                 <div className={styles.iconContainer}>
                   <i className="bi bi-envelope"></i>
                 </div>
                 <div className="ms-3">
                   <h4 className={styles.cardTitle}>Email Inquiry</h4>
-                  <a href="mailto:info@versanengineering.com" className={styles.cardLink}>info@versanengineering.com</a>
+                  <a href="mailto:versanengg@gmail.com" className={styles.cardLink}>versanengg@gmail.com</a>
                 </div>
               </div>
 
-              {/* Card 4: Hours */}
+              {/* Card 5: Facebook */}
+              <div className={styles.infoCard}>
+                <div className={styles.iconContainer}>
+                  <i className="bi bi-facebook"></i>
+                </div>
+                <div className="ms-3">
+                  <h4 className={styles.cardTitle}>Facebook Page</h4>
+                  <a href="https://www.facebook.com/share/1J2R4YMUh3/" target="_blank" rel="noopener noreferrer" className={styles.cardLink}>Versan Engineering</a>
+                </div>
+              </div>
+
+              {/* Card 6: Hours */}
               <div className={styles.infoCard}>
                 <div className={styles.iconContainer}>
                   <i className="bi bi-clock"></i>
@@ -152,9 +174,12 @@ export default function Contact() {
                       className={`${styles.formInput} form-select`}
                     >
                       <option value="">Select an option</option>
+                      <option value="crushers">Stone Crushing Equipment</option>
+                      <option value="spares">Replacement Spares</option>
+                      <option value="conveyors">Conveyor Systems</option>
+                      <option value="slurry">Hydrocyclone & Slurry Systems</option>
+                      <option value="fabrication">Heavy MS Fabrication</option>
                       <option value="quote">Request a Quote</option>
-                      <option value="fabrication">Industrial Fabrication</option>
-                      <option value="engineering">Engineering Services</option>
                       <option value="other">General Inquiry</option>
                     </select>
                   </div>
@@ -194,8 +219,16 @@ export default function Contact() {
               <div className="col-md-6 col-lg-5 text-start">
                 <h3 className={styles.footerBrand}>Versan Engineering</h3>
                 <p className={styles.footerDesc}>
-                  Reliable industrial engineering and fabrication solutions from Sangareddy, Telangana.
+                  Leading manufacturer of stone crushing equipment, custom-engineered systems, and heavy MS fabrication.
                 </p>
+                <div className="d-flex gap-3 mt-3">
+                  <a href="https://www.facebook.com/share/1J2R4YMUh3/" target="_blank" rel="noopener noreferrer" className={styles.footerSocialLink} aria-label="Facebook">
+                    <i className="bi bi-facebook fs-5 text-white-50"></i>
+                  </a>
+                  <a href="https://wa.me/919059057480" target="_blank" rel="noopener noreferrer" className={styles.footerSocialLink} aria-label="WhatsApp">
+                    <i className="bi bi-whatsapp fs-5 text-white-50"></i>
+                  </a>
+                </div>
               </div>
 
               {/* Footer Column 2: Quick Links */}
@@ -211,8 +244,13 @@ export default function Contact() {
 
               {/* Footer Column 3: Direct Phone */}
               <div className="col-md-12 col-lg-3 text-start text-lg-end mt-4 mt-lg-0">
-                <h4 className={styles.footerHeader}>Contact</h4>
-                <a href="tel:+917942534385" className={styles.footerPhone}>+91 7942534385</a>
+                <h4 className={styles.footerHeader}>Contact Details</h4>
+                <a href="tel:+919059057480" className={styles.footerPhone}>+91 90590 57480</a>
+                <div className="mt-2">
+                  <a href="mailto:versanengg@gmail.com" className="text-white-50 text-decoration-none" style={{ transition: 'color 0.3s ease' }}>
+                    versanengg@gmail.com
+                  </a>
+                </div>
               </div>
             </div>
 

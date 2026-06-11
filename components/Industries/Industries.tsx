@@ -4,11 +4,11 @@ import React from "react";
 import styles from "./Industries.module.css";
 
 const industriesData = [
-  { id: "01", name: "Manufacturing" },
-  { id: "02", name: "Construction" },
-  { id: "03", name: "Warehousing" },
-  { id: "04", name: "Industrial Plants" },
-  { id: "05", name: "Engineering Companies" },
+  { id: "01", name: "Mining" },
+  { id: "02", name: "Quarrying" },
+  { id: "03", name: "Bulk Material Handling" },
+  { id: "04", name: "Slurry Classification" },
+  { id: "05", name: "Heavy MS Fabrication" },
 ];
 
 export default function Industries() {
