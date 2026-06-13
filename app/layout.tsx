@@ -5,6 +5,11 @@ export const metadata: Metadata = {
   title: "Versan Engineering | Precision Engineering & Fabrication",
   description: "Built for industry. Engineered to perform. Engineering excellence, reliable solutions, and lasting value for industrial projects demanding strength, accuracy, and accountability.",
   keywords: ["engineering", "fabrication", "industrial manufacturing", "Versan Engineering", "Sangareddy", "Telangana"],
+  icons: {
+    icon: "/icon.png",
+    shortcut: "/icon.png",
+    apple: "/icon.png",
+  },
 };
 
 export default function RootLayout({

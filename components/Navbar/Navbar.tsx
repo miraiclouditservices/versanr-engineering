@@ -32,10 +32,11 @@ export default function Navbar() {
       <div className="container px-4 px-md-5">
         {/* Brand Logo */}
         <a className={`${styles.logoContainer} navbar-brand d-flex align-items-center`} href="#home" onClick={closeMenu}>
-          <div className={styles.logoBadge}>V</div>
-          <div className="d-flex flex-column ms-2 text-start">
-            <span className={styles.brandName}>Versan Engineering</span>
-          </div>
+          <img
+            src="/logo.png"
+            alt="Versan Engineering Logo"
+            className={styles.logoImage}
+          />
         </a>
 
         {/* Mobile Action buttons (Visible on Mobile) */}
