@@ -1,9 +1,12 @@
 "use client";
 
 import React, { useState } from "react";
+import { usePathname } from "next/navigation";
 import styles from "./Contact.module.css";
 
 export default function Contact() {
+  const pathname = usePathname();
+  const isHome = pathname === "/" || pathname === "";
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -235,10 +238,10 @@ export default function Contact() {
               <div className="col-md-6 col-lg-4 text-start">
                 <h4 className={styles.footerHeader}>Quick Links</h4>
                 <div className={styles.footerLinks}>
-                  <a href="#about" className={styles.footerLink}>About</a>
-                  <a href="#services" className={styles.footerLink}>Services</a>
-                  <a href="#gallery" className={styles.footerLink}>Projects</a>
-                  <a href="#contact" className={styles.footerLink}>Contact</a>
+                  <a href={isHome ? "#about" : "/#about"} className={styles.footerLink}>About</a>
+                  <a href={isHome ? "#services" : "/#services"} className={styles.footerLink}>Services</a>
+                  <a href={isHome ? "#gallery" : "/#gallery"} className={styles.footerLink}>Gallery</a>
+                  <a href={isHome ? "#contact" : "/#contact"} className={styles.footerLink}>Contact</a>
                 </div>
               </div>
 

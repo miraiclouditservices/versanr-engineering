@@ -6,38 +6,39 @@ import styles from "./Gallery.module.css";
 const projectsData = [
   {
     id: 1,
-    title: "Precision Welding & Assembly",
-    category: "Industrial Fabrication",
-    imageUrl: "/project-gallery-1.jpg",
-    gridClass: styles.gridWelding,
+    title: "Precision Lathe Machining",
+    category: "Machining & Lathe",
+    imageUrl: "/v1.png",
   },
   {
     id: 2,
-    title: "Heavy Lathe Operations",
-    category: "Engineering Services",
-    imageUrl: "/project-gallery-2.jpg",
-    gridClass: styles.gridLathe,
+    title: "Heavy-Duty Boring & Milling",
+    category: "Machining & Lathe",
+    imageUrl: "/v2.png",
   },
   {
     id: 3,
-    title: "Precision Boring & Drilling",
-    category: "Manufacturing Solutions",
-    imageUrl: "/project-gallery-3.jpg",
-    gridClass: styles.gridDrilling,
+    title: "Heavy MS Structural Welding",
+    category: "Heavy Fabrication",
+    imageUrl: "/v4.png",
   },
   {
     id: 4,
-    title: "Structural Steel Fabrication",
-    category: "Industrial Fabrication",
-    imageUrl: "/project-gallery-4.jpg",
-    gridClass: styles.gridStructural,
+    title: "Industrial Structure Assembly",
+    category: "Heavy Fabrication",
+    imageUrl: "/v6.png",
   },
   {
     id: 5,
-    title: "Industrial Pipe Installation",
-    category: "Project Execution",
-    imageUrl: "/project-gallery-5.jpg",
-    gridClass: styles.gridPiping,
+    title: "Conveyor Rotary Drum Spares",
+    category: "Conveyor Systems",
+    imageUrl: "/v8.png",
+  },
+  {
+    id: 6,
+    title: "Crushing Machinery Refurbishment",
+    category: "Site Work & Assemblies",
+    imageUrl: "/v12.png",
   },
 ];
 
@@ -57,18 +58,18 @@ export default function Gallery() {
           </div>
           <div className="col-lg-6 text-lg-end mt-3 mt-lg-0">
             <p className={styles.sectionSub}>
-              From fabrication floors to active project sites, our work is built on precision, 
-              coordination, and craft.
+              From fabrication floors to active quarry sites, our work is built on precision, 
+              coordination, and industrial strength.
             </p>
           </div>
         </div>
 
-        {/* Asymmetrical Masonry Grid */}
+        {/* Gallery Grid */}
         <div className={styles.galleryGrid}>
           {projectsData.map((project) => (
             <div 
               key={project.id} 
-              className={`${styles.galleryItem} ${project.gridClass}`}
+              className={styles.galleryItem}
               onClick={() => setSelectedImage(project.imageUrl)}
             >
               {/* Image */}
@@ -91,6 +92,14 @@ export default function Gallery() {
             </div>
           ))}
         </div>
+
+        {/* View All Button */}
+        <div className="text-center mt-5">
+          <a href="/gallery" className={styles.viewAllBtn}>
+            View Gallery
+            <i className="bi bi-arrow-right ms-2"></i>
+          </a>
+        </div>
       </div>
 
       {/* Lightbox / Modal for Zooming */}
@@ -108,3 +117,4 @@ export default function Gallery() {
     </section>
   );
 }
+
